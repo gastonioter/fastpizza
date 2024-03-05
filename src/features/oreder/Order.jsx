@@ -29,7 +29,6 @@ function Order() {
 
   useEffect(
     function () {
-      console.log(fetcher.state);
       if (!fetcher.data && fetcher.state === 'idle') fetcher.load('/menu');
     },
     [fetcher],
